@@ -15,16 +15,23 @@ modify multiple repos
 
 ## Usage
 
-```yaml
-_extends: release-drafter-config
-```
+To leverage Release Drafter and this shared config two files will need to be added to your repository.
+1. `.github/workflows/release-drafter.yml` This enables the action in the repository. 
+    * this can be copied directly from this shared repository
+1. `.github/release-drafter.yml` this is the configuration for release-drafter to use. Contents should be 
+    * If you want you can copy `.github/extension-sample.yml` -> `.github/release-drafter.yml` or the contents should be. 
+    ```yaml
+    _extends: release-drafter-config
+    ```
 
 ## Overrides
 
 You are able to override any config props that your team deems they'd like different from the common config.
 
-**Note**: Although this is possible it is recommended that you stick with the common config since its a safe default
-and will make it easy to bounce between release notes in repos.
+```diff
+! Although this is possible it is recommended that you stick with the common config since its a 
+! safe default and will make it easy to bounce between release notes in repos.
+```
 
 ```yaml
 _extends: release-drafter-config
