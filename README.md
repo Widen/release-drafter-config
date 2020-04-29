@@ -2,6 +2,11 @@
 
 This is a common configuration for the [Release Drafter](https://github.com/release-drafter/release-drafter) github action.
 
+## Public Disclaimer
+```diff
+- WARNING: THIS IS A PUBLIC REPOSITORY. DO NOT COMMIT ANYTHING THAT CAN NOT BE SHARED
+```
+
 ## Description
 
 [Release Drafter](https://github.com/release-drafter/release-drafter) is a Probot application that allows extending configuration from a shared repository
@@ -11,7 +16,7 @@ modify multiple repos
 ## Usage
 
 ```yaml
-_extends: Widen/release-drafter-config
+_extends: release-drafter-config
 ```
 
 ## Overrides
@@ -22,7 +27,7 @@ You are able to override any config props that your team deems they'd like diffe
 and will make it easy to bounce between release notes in repos.
 
 ```yaml
-_extends: Widen/release-drafter-config
+_extends: release-drafter-config
 # Optionally include any values that your team would like to override
 change-template: '> $TITLE (#$NUMBER)'
 ```
