@@ -1,6 +1,6 @@
 change-template: '- $TITLE #$NUMBER (@$AUTHOR)'
-name-template: 'v$NEXT_PATCH_VERSION'
-tag-template: 'v$NEXT_PATCH_VERSION'
+name-template: 'v$NEXT_PATCH_VERSION (DRAFT)'
+tag-template: 'v$NEXT_PATCH_VERSION (DRAFT)'
 template: |
   ## Contributers
   $CONTRIBUTORS
