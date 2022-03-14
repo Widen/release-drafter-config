@@ -1,7 +1,7 @@
 change-template: '- $TITLE #$NUMBER (@$AUTHOR)'
 name-template: 'v$NEXT_PATCH_VERSION (DRAFT)'
 template: |
-  ## Contributers
+  ## Contributors
   $CONTRIBUTORS
 
   ## Changes
